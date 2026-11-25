@@ -20,4 +20,3 @@
 
 ## Learning Outcomes
 
-## Author
