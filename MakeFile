@@ -1,0 +1,14 @@
+a.out : main.o commentRemoval.o headerfileinclusion.o macro_replacement.o
+	gcc main.o commentRemoval.o headerfileinclusion.o macro_replacement.o -o mypreprocessor
+
+main.o : main.c
+	gcc -c main.c
+
+commentRemoval.o : commentRemoval.c
+	gcc -c commentRemoval.c
+
+headerfileinclusion.o : headerfileinclusion.c
+	gcc -c headerfileinclusion.c
+
+macro_replacement.o : macro_replacement.c
+	gcc -c macro_replacement.c
